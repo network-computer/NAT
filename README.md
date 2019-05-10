@@ -44,13 +44,6 @@ LAN Range `192.168.150.50` -> `192.168.200.254`
 
 ## Config NAT
 
-### Enable gateway function
-To enable gateway function on FreeBSD, add the following line to `/etc/rc.conf`:
-```
-gateway_enable="YES"
-```
-This line enables IP forwarding (i.e., sysctl net.inet.ip.forwarding=1).
-
 ### FreeBSD Network Configuration
 
 Open /etc/rc.conf in your favorite editor. You need to add a line for each network card present on the system, for example in our case we'll use two network cards:
