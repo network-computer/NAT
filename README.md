@@ -1,9 +1,6 @@
 # NAT
 Basic NAT config with FreeBSD
 
-
-
-
 ## Test computer (Border NAT)
 ```
 $ dmesg | less: 
