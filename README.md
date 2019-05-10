@@ -62,7 +62,7 @@ ifconfig_xn0="DHCP"
 ifconfig_xn1="inet 192.168.150.1 netmask 255.255.0.0"
 
 # Default gateway
-defaultrouter="192.168.100.1" # Set the gateway
+defaultrouter="192.168.133.1" # Set the gateway
 
 # Enable ip forward
 gateway_enable="YES"
@@ -98,7 +98,7 @@ You will also have to edit `/etc/hosts` to add the names and the IP addresses of
 
 Set the DNS in `/etc/resolv.conf` :
 ```
-nameserver    192.168.100.1
+nameserver    192.168.133.1
 ```
 
 > NOTE: You need to manually set up the nameserver only if you are not using dhcp for WAN connection.
@@ -117,7 +117,7 @@ Then edit /usr/local/etc/dhcpd.conf. (local DNS server,lease time, the network g
 # /usr/local/etc/dhcpd.conf
 
 # name server
-option domain-name-servers 192.168.100.1;
+option domain-name-servers 192.168.133.1;
 # lease time
 default-lease-time 600;
 max-lease-time 7200;
