@@ -250,3 +250,16 @@ CPU: 0.0% user, 0.0% nice, 1.2% system, 4.7% interrupt, 94.2% idle
 Mem: 21M Active, 136M Inact, 89M Wired, 44K Cache, 59M Buf, 237M Free 
 Swap: 2048M Total, 2048M Free 
 ```
+
+## Testing the connection
+
+- Try to navigate the web using the connected device
+- Check the kernel IP routing table using the command `netstat -r`
+- Use the command `ip addr` if your ip is correctly inside the given NAT range
+- You can TCP Dump the router (FreeBSD) while making network requests with the device
+
+## Restrictions
+
+- The security of the network configuration is low considering that all the ports are open and responsive, a setup we used for debug only and should not be a production solution
+- Managing hosts who receive static IPs is too manual with the need of opening the configuration file and rebooting the system every time
+- No wireless management is guaranteed since no access point was made available for testing
